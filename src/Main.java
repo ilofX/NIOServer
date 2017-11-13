@@ -29,7 +29,7 @@ public class Main {
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
-        ServerTCP server = new ServerTCP(false, 8181, "certificates/CA.pfx", "certificates/client.pfx");
+        ServerTCP server = new ServerTCP(true, 8181, "certificates/CA.pfx", "certificates/client.pfx");
         server.serverInit();
         server.start();
     }
